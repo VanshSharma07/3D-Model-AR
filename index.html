@@ -6,16 +6,14 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <title>3D Model AR Viewer</title>
 </head>
-<body>
-  <h1>3D Model in AR</h1>
+<body style="margin:0; overflow:hidden;">
   <model-viewer
-    src="diya.usdz"   <!-- Replace with your .glb file path -->
-    alt="A 3D model"
+    src="diys.usdz"
     ar
     ar-modes="scene-viewer quick-look"
-    environment-image="neutral"
     camera-controls
-    auto-rotate>
+    auto-rotate
+    style="width:100%; height:100vh;">
   </model-viewer>
 </body>
 </html>
